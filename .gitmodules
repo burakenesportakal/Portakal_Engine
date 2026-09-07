@@ -1,0 +1,3 @@
+[submodule "Portakal/vendor/spdlog"]
+	path = Portakal/vendor/spdlog
+	url = https://github.com/gabime/spdlog
