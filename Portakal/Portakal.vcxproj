@@ -110,6 +110,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PRTKL_PLATFORM_WINDOWS;PRTKL_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Portakal\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +127,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PRTKL_PLATFORM_WINDOWS;PRTKL_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Portakal\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,12 +137,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Portakal\Log.h" />
     <ClInclude Include="src\Portakal\Application.h" />
     <ClInclude Include="src\Portakal\Core.h" />
     <ClInclude Include="src\Portakal.h" />
     <ClInclude Include="src\Portakal\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Portakal\Log.cpp" />
     <ClCompile Include="src\Portakal\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

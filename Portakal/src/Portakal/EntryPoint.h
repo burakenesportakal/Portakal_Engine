@@ -5,7 +5,6 @@
 extern Portakal::Application* Portakal::CreateApplication();
 
 int main(int argc, char** argv) {
-	
 	auto app = Portakal::CreateApplication();
 	app->Run();
 	delete app;
